@@ -1,9 +1,10 @@
 import './index.css'
+import Hero from './sections/Hero'
 
 function App() {
   return (
     <main>
-      <h1>GSAP Portfolio — Phase 0</h1>
+      <Hero />
     </main>
   )
 }
