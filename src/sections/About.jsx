@@ -7,6 +7,8 @@ function About() {
   const sectionRef = useRef(null)
   const headingRef = useRef(null)
   const textRef = useRef(null)
+  const boxRef = useRef(null)
+
 
   useGSAP(()=>{
 
@@ -36,6 +38,19 @@ function About() {
             toggleActions: 'play none none reverse'
         }
     })
+
+    gsap.to(boxRef.current, {
+        x: 400,
+        rotation: 360,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: boxRef.current,
+          start: 'top 70%',
+          end: 'top 20%',
+          scrub: 1,       // ties animation progress to scroll position
+          markers: true,
+        }
+      })
   })
   
 
@@ -58,6 +73,13 @@ function About() {
         I use GSAP, React, and creative problem solving to bring 
         interfaces to life.
       </p>
+      <div ref={boxRef} style={{
+        width: '80px',
+        height: '80px',
+        background: 'white',
+        borderRadius: '8px',
+        marginTop: '60px'
+      }} />
     </section>
   )
 }

@@ -14,7 +14,7 @@ function Hero() {
       y: 60,
       duration: 1,
       ease: 'power3.out',
-      repeat: 2,
+      repeat: 0,
       yoyo: true 
     })
 
@@ -25,7 +25,7 @@ function Hero() {
       duration: 1,
       delay: 0.2,
       ease: 'power3.out',
-      repeat:2,
+      repeat:0,
       yoyo: true
     })
 
