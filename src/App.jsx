@@ -15,6 +15,7 @@ function App() {
       <About />
       <Work />
       <Project />
+      <div className='h-dvh w-dvw'></div>
     </main>
   )
 }
