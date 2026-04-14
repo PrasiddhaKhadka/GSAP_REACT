@@ -1,10 +1,8 @@
 import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'   // ✅ single Card component
 import ProjectTitle from '../components/ProjectTitle'
 import Card from '../components/ProjectCard'
-// gsap.registerPlugin(ScrollTrigger)             // ✅ uncommented
 
 const cards = [
   { title: "Card One",   description: "First project",  color: "bg-red-500"   },
