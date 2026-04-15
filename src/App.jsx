@@ -5,6 +5,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import Work from './sections/Work'
 import Project from './sections/Project'
+import Learn from './sections/learn'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -14,7 +15,8 @@ function App() {
       <Hero />
       <About />
       <Work />
-      <Project />
+      {/* <Project /> */}
+      <Learn />
       <div className='h-dvh w-dvw'></div>
     </main>
   )

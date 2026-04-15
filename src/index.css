@@ -12,11 +12,25 @@ html {
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@utility no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;    /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;          /* Safari and Chrome */
+  }
+}
+
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #0a0a0a;
   color: #ffffff;
   overflow-x: hidden;
+  -ms-overflow-style: none;
 }
 
 .container {

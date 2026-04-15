@@ -1,0 +1,9 @@
+<div className="flex flex-nowrap overflow-x-auto overflow-y-auto gap-x-10 scroll-auto no-scrollbar mt-16 ">
+                {
+                    cards.map((data,index)=>{
+                        return (
+                            <Card key={index} title={data.title} color={data.color} description={data.description}/>
+                        )
+                    })
+                }
+            </div>
