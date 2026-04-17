@@ -9,6 +9,7 @@ import Learn from './sections/learn'
 import VideoScroll from './sections/Video'
 import { CallBackApp } from './callbacks/callbacks'
 import TodoScreen from './hooks/todo_screen'
+import LucidApp from './lucid/lucid'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -25,7 +26,9 @@ function App() {
       <div className='h-dvh w-dvw'></div> */}
 
 
-      <TodoScreen />
+      {/* <TodoScreen /> */}
+
+      <LucidApp />
     </main>
   )
 }
