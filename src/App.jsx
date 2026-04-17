@@ -10,6 +10,8 @@ import VideoScroll from './sections/Video'
 import { CallBackApp } from './callbacks/callbacks'
 import TodoScreen from './hooks/todo_screen'
 import LucidApp from './lucid/lucid'
+import { Button } from './components/ui/button'
+import { ShadCdnUi } from './shadcn/shadcn_page'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -28,7 +30,9 @@ function App() {
 
       {/* <TodoScreen /> */}
 
-      <LucidApp />
+      {/* <LucidApp /> */}
+
+      <ShadCdnUi />
     </main>
   )
 }
