@@ -6,18 +6,26 @@ import { ScrollTrigger } from 'gsap/all'
 import Work from './sections/Work'
 import Project from './sections/Project'
 import Learn from './sections/learn'
+import VideoScroll from './sections/Video'
+import { CallBackApp } from './callbacks/callbacks'
+import TodoScreen from './hooks/todo_screen'
 
 gsap.registerPlugin(ScrollTrigger)
 
 function App() {
   return (
     <main>
-      <Hero />
+      {/* <CallBackApp /> */}
+      {/* <Hero />
       <About />
-      <Work />
+      <Work /> */}
       {/* <Project /> */}
-      <Learn />
-      <div className='h-dvh w-dvw'></div>
+      {/* <Learn />
+      <VideoScroll />
+      <div className='h-dvh w-dvw'></div> */}
+
+
+      <TodoScreen />
     </main>
   )
 }

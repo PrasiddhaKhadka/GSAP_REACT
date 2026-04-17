@@ -1,5 +1,6 @@
 import { useCallback, useState } from "react";
 import { ChildComponent } from "./callback_child";
+import { ApiCallBack } from "./apicallback";
 
 export function CallBackApp(){
 
@@ -9,6 +10,8 @@ export function CallBackApp(){
     console.log("Button clicked");
   },[])
   
+
+
  
 
 
@@ -19,7 +22,11 @@ export function CallBackApp(){
         <button onClick={()=>setCount(count+1)} className="bg-red-300 p-3 rounded-2xl m-5">Add</button>
         {/* <button onClick={handleClick} className="bg-amber-300 p-3 rounded-2xl"> Click Here !!</button> */}
 
-        <ChildComponent onClick={handleClick}/>
+        {/* <ChildComponent onClick={handleClick}/> */}
+
+        <ApiCallBack />
+
+        
     </div>
   )
 }
