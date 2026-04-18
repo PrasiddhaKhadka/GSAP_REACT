@@ -34,3 +34,5 @@ axios.interceptors.response.use((res)=>{
     console.log(error)
     return Promise.reject(error)
 })
+
+export default httpClient
