@@ -12,28 +12,38 @@ import TodoScreen from './hooks/todo_screen'
 import LucidApp from './lucid/lucid'
 import { Button } from './components/ui/button'
 import { ShadCdnUi } from './shadcn/shadcn_page'
+import CounterZus from './store/counter_ui'
+import { QueryClientProvider } from '@tanstack/react-query'
+import { queryClient } from './store/lib/queryClient'
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+
 
 gsap.registerPlugin(ScrollTrigger)
 
 function App() {
   return (
-    <main>
-      {/* <CallBackApp /> */}
-      {/* <Hero />
-      <About />
-      <Work /> */}
-      {/* <Project /> */}
-      {/* <Learn />
-      <VideoScroll />
-      <div className='h-dvh w-dvw'></div> */}
+    <QueryClientProvider client={queryClient}>
+      <main>
+        {/* <CallBackApp /> */}
+        {/* <Hero />
+        <About />
+        <Work /> */}
+        {/* <Project /> */}
+        {/* <Learn /> 
+        <VideoScroll />
+        <div className='h-dvh w-dvw'></div> */}
 
 
-      {/* <TodoScreen /> */}
+        {/* <TodoScreen /> */}
 
-      {/* <LucidApp /> */}
+        {/* <LucidApp /> */}
 
-      <ShadCdnUi />
-    </main>
+        <ShadCdnUi />
+
+        <CounterZus />
+      </main>
+      <ReactQueryDevtools initialIsOpen={false} />
+    </QueryClientProvider>
   )
 }
 
