@@ -1,5 +1,4 @@
 import axios from "axios";
-import { error } from "node:console";
 
 
 const baseURL = 'https://dummyjson.com/user'
